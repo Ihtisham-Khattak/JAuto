@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3rem;
+}
+
+body{
+
+    /* min-height: 100vh;
+    min-width: 100%; */
+    margin: 8rem 0 0 0;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+p{
+
+    font-size: 1rem;    
+    text-align: center;
+}
