@@ -1,7 +1,4 @@
 const mongoose = require("mongoose");
-//AutoIncrement ID (intall mongoose-sequence) package
-const autoIncrement = require('mongoose-sequence')(mongoose)
-
 
 const userSchema = new mongoose.Schema({
   userName: {
@@ -20,16 +17,10 @@ const userSchema = new mongoose.Schema({
     },
   ],
 
-  activeStatus: {
+  active: {
     type: Boolean,
     deault: true,
   },
 });
 
-
-noteSchema.plugin(autoIncrement, {
-    inc_number: 'ticket',
-    id: 'ticketNums',
-    start_seq: 500
-})
 module.exports = mongoose.model("User", userSchema);

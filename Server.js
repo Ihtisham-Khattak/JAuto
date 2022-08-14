@@ -35,6 +35,8 @@ connectionDB();
 app.use("/", express.static(path.join(__dirname, "/Public")));
 //HTML file from specified path
 app.use("/", require("./Routes/routes"));
+//Declare Routes for USER
+app.use("/User", require("./Routes/userRouter")); 
 
 //For Unkown Router
 app.all("*", (req, res) => {
